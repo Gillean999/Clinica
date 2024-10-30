@@ -4,32 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Pagamento</title>
+  <title>Valor da consulta 200 reais</title>
+  <style>
+   
+  </style>
 </head>
 <body>
-  
-  <form id="payment-form">
-    <h1>Pagamento</h1>
-    <h2>Selecione o Método de Pagamento</h2>
-    <label>
-      <input type="radio" name="payment_method" value="pix" checked>
-      PIX
-    </label><br>
-    <label>
-      <input type="radio" name="payment_method" value="cartao">
-      Cartão de Crédito
-    </label><br>
-    <label>
-      <input type="radio" name="payment_method" value="boleto">
-      Boleto Bancário
-    </label><br><br>
-    <a rel="stylesheet" href="/confirmacao.html">
-      <button type="button" onclick="confirmPayment()">Prosseguir para Pagamento</button>
-    </a>
-  </form>
+  <h1>Valor da consulta 200 reais</h1>
+  <div class="copy-container">
+    <input type="text" id="texto" value="00020126450014br.gov.bcb.pix0123kauacosta1111@gmail.com52040000530398654041.005802BR5924Kaua Costa Vieira Santos6008Brasilia62080504mpda6304EF9F">
+    <button onclick="copiarTexto()">Copiar</button>
+  </div>
+  <a href="/confirmacao.html"><button >Confirmar Pagamento</button></a>
+
   <script>
-    function confirmPayment() {
+    function copiarTexto() {
+      const texto = document.getElementById("texto");
+      texto.select();
+      texto.setSelectionRange(0, 99999); 
+      document.execCommand("copy");
+    
     }
   </script>
+
 </body>
 </html>
