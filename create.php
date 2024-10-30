@@ -34,7 +34,11 @@ if ($_SERVER["RESQUEST_METHOD"] == "POST") {
  
         <label for="status">Status:</label>
         <select name="status" id="status">
-            
+            <option value="pendente">Pendente</option>
+            <option value="em andamento">em andamento</option>
+            <option value="concluida">concluida</option>
+        </select>
+        <button type="submit" class="button">Salvar</button>
     </form> 
 </body>
 </html>
