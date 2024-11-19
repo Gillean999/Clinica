@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <form action="/" method="post">
+    <form id="myForm"">
         <h1>Agendamento de Consulta</h1>
         <label for="nome">Nome Completo:</label>
         <input type="text" id="nome" name="nome" required><br><br>
@@ -34,8 +34,10 @@
 
         <label for="mensagem">Mensagem Adicional:</label><br>
         <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Agendar consulta</button>
     </form>
-    <a href="/metodo.html">
-        <button>Agendar Consulta</button></a>
+    <a href="/checar.html">
+        <button>checar consulta marcada</button></a>
 </body>
+<script src="/js/index.js"></script>
 </html>
